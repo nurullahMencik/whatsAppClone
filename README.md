@@ -21,7 +21,7 @@ Mongoose: MongoDB veritabanı ile etkileşim kurmak için.
 Firebase: Belirli hizmetler (örneğin kimlik doğrulama) için.
 
 ## Proje Yapısı
-``
+``````
 
 ├── client/                     # Ön uç (Frontend) dizini
 │   ├── public/                 # Statik dosyalar
@@ -65,6 +65,6 @@ Firebase: Belirli hizmetler (örneğin kimlik doğrulama) için.
 │   └── ...
 │
 └── README.md
-``
+``````
 Hazırlayan
 Nurullah Mencik - nurullahmencik42@gmail.com
