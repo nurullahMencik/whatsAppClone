@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.chatDetailBg{
+    background-image: url("https://storage.ko-fi.com/cdn/useruploads/display/8b07a1ea-9c29-4267-b478-18964a7fda48_naruwhatsappwallpaper.png");
+}
