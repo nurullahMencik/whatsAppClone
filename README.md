@@ -23,30 +23,32 @@ Firebase: Belirli hizmetler (örneğin kimlik doğrulama) için.
 ## Proje Yapısı
 ``````
 
-├── client/                     # Ön uç (Frontend) dizini
-│   ├── public/                 # Statik dosyalar
-│   ├── src/                    
-│   │   ├── components/         # Yeniden kullanılabilir React bileşenleri
+├── client/                     
+│   ├── public/                
+│   ├── src/
+│   │   ├── components/         
 │   │   │   └── Sidebar.jsx
-│   │   ├── container/          # Durum yöneten ana bileşenler
+│   │   ├── container/          
 │   │   │   └── PageContainer.jsx
-│   │   ├── pages/              # Uygulama sayfaları (Chat, Login vb.)
+│   │   ├── pages/              # Uygulama sayfaları 
 │   │   │   ├── Chat.jsx
 │   │   │   ├── ChatDetails.jsx
 │   │   │   └── Login.jsx
 │   │   ├── redux/              # Redux state yönetimi (slices, store)
 │   │   │   ├── slices/
 │   │   │   └── store.js
-│   │   ├── services/           # Firebase gibi harici servisler
-│   │   │   └── firebase.js
+│   │   ├── services/           # API isteklerini yöneten servisler
+│   │   │   ├── message.js
+│   │   │   └── room.js
 │   │   ├── App.jsx
+│   │   ├── firebase.js         # Firebase konfigürasyon dosyası
 │   │   └── main.jsx
 │   ├── .gitignore
 │   ├── package.json
 │   ├── vite.config.js
 │   └── ...
 │
-├── server/                     # Arka uç (Backend) dizini
+├── server/                     
 │   ├── config/                 # Veritabanı yapılandırması
 │   │   └── database.js
 │   ├── controllers/            # İstek/yanıt mantığı
